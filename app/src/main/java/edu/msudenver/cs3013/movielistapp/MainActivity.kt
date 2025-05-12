@@ -46,7 +46,7 @@ class MainActivity : AppCompatActivity() {
         myPlace = File(filesDir, "MOVIELIST.csv")
         readFile()
 
-        /**     # Example list:
+        /**     # Example list (TESTED):
         movieList = arrayListOf(
             Movie("The Godfather", "1972", "Crime", "9.2"),
             Movie("The Dark Knight", "2008", "Action", "9.0"),
