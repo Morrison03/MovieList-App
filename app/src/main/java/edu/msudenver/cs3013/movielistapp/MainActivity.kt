@@ -45,15 +45,6 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this)
         myPlace = File(filesDir, "MOVIELIST.csv")
         readFile()
-
-        /**     # Example list (TESTED):
-        movieList = arrayListOf(
-            Movie("The Godfather", "1972", "Crime", "9.2"),
-            Movie("The Dark Knight", "2008", "Action", "9.0"),
-            Movie("The Matrix", "1999", "Science Fiction", "8.7")
-        )
-        **/
-
         movieAdapter = MovieAdapter(movieList)
         recyclerView.adapter = movieAdapter
         val itemTouchHelper = ItemTouchHelper(movieAdapter.swipeToDeleteCallback)
